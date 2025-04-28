@@ -2,6 +2,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ChatPer
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 import re
 import os
+from telegram import Bot, Update
 import logging
 
 # Logging Setup
