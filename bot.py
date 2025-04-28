@@ -1,12 +1,13 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ChatPermissions
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 import re
+import os
 import logging
 
 # Logging Setup
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-TOKEN = '8051152860:AAGGpwCik-DLCgwGkMKLGe7nNSVC7K8uD7o'
+TOKEN = os.getenv("8051152860:AAGGpwCik-DLCgwGkMKLGe7nNSVC7K8uD7o")
 
 # Warning Counter
 user_warnings = {}
