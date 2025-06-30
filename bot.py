@@ -2,6 +2,9 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ChatPer
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 import re
 import os
+import imghdr
+from PIL import Image
+import io
 from telegram import Bot, Update
 import logging
 
